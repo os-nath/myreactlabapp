@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import SubHeader from "./Hearts";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         >
           Ongoing learning
         </a>
+
+        <SubHeader />
       </header>
     </div>
   );
