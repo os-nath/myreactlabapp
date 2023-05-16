@@ -15,6 +15,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          sx={{ p: 100 }}
         >
           Ongoing learning
         </a>

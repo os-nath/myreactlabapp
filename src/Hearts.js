@@ -12,6 +12,7 @@ export default function SubHeader(props) {
       wrapperStyle={{}}
       wrapperClass=""
       visible={true}
+      sx={{ p: 100 }}
     />
   );
 }
