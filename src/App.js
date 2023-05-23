@@ -1,5 +1,5 @@
 import "../src/css/App.css";
-import SubHeader from "./Hearts";
+import SubHeader from "./components/Hearts";
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           <code>
-            Edit <span className="editable">life</span>, reload and keep going!
+            Edita a <span className="editable">vida</span>, atualiza e segue o
+            baile!
           </code>
         </p>
         <a
