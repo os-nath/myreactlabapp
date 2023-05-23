@@ -7,7 +7,7 @@ export default function SubHeader(props) {
     <Hearts
       height="80"
       width="200"
-      color="pink"
+      color="#a461fb"
       ariaLabel="hearts-loading"
       wrapperStyle={{}}
       wrapperClass=""

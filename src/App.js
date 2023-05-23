@@ -1,14 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "../src/css/App.css";
 import SubHeader from "./Hearts";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>
+            Edit <span className="editable">life</span>, reload and keep going!
+          </code>
         </p>
         <a
           className="App-link"
@@ -19,7 +20,7 @@ function App() {
         >
           Ongoing learning
         </a>
-
+        <br />
         <SubHeader />
       </header>
     </div>
