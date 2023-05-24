@@ -26,7 +26,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.App-header {
+.appCenter {
   /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
@@ -35,6 +35,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(64, 173, 216);
+  text-align: center;
+  background-color: #282c34;
 }
 
 .App-link {
