@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import SubHeader from "./components/Hearts";
 import Sidebar from "./components/sidebar";
+import Content from "../src/components/content";
 
 import MuiDrawer from "@mui/material/Drawer";
 import { styled } from "@mui/material/styles";
@@ -57,6 +58,7 @@ function App() {
           <Sidebar onCollapsedToggle={onCollapsedToggle} />
         </Drawer>
         <Box>
+          <Content />
           <SubHeader />
         </Box>
       </Box>

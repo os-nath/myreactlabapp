@@ -7,12 +7,12 @@ import { Hearts } from "react-loader-spinner";
 export default function SubHeader(props) {
   return (
     <>
-      <Box className="appCenter">
+      {/* <Box className="appCenter">
         <code>
           Edita a <span className="editable">vida</span>, atualiza e segue o
           baile!
         </code>
-      </Box>
+      </Box> */}
       <Box className="appCenter">
         <a
           className="App-link"
