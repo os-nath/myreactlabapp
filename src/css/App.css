@@ -13,11 +13,40 @@
   width: 20% !important;
   align-items: center !important;
   justify-content: center !important;
+  border: 0 !important;
+}
+
+.homePageCtnr {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.myPrimaryBtn {
+  color: #000 !important;
+  background-color: #fedd00 !important;
+  font-weight: 500 !important;
+}
+
+.myPrimaryBtn:hover {
+  background-color: #d97626 !important;
+  font-weight: 600 !important;
+}
+
+.mySecondaryBtn {
+  color: #000 !important;
+  border-color: #d97626 !important;
+  font-weight: 500 !important;
+}
+
+.mySecondaryBtn:hover {
+  background-color: #d97626 !important;
+  font-weight: 600 !important;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

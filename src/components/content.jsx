@@ -79,16 +79,10 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button
-                variant="contained"
-                sx={{ color: "#009739", bgcolor: "#FEDD00", fontWeight: "700" }}
-              >
+              <Button variant="contained" className="myPrimaryBtn">
                 Main call to action
               </Button>
-              <Button
-                variant="outlined"
-                sx={{ borderColor: "#FEDD00", color: "#012169" }}
-              >
+              <Button variant="outlined" className="mySecondaryBtn">
                 Secondary action
               </Button>
             </Stack>
@@ -124,19 +118,26 @@ export default function Album() {
         </Box>
 
         <Container
-          sx={{ py: 8, bgcolor: "#F1EFF2" }}
+          sx={{ py: 8, bgcolor: "blue" }}
           maxWidth="100%"
           height="100%"
         >
-          <Grid container spacing={4}>
+          <Grid
+            container
+            spacing={1}
+            sx={{
+              width: "50%",
+            }}
+          >
             {cards.map((card) => (
-              <Grid item key={card} lg={4} className="cardGrids">
+              <Grid item key={card} lg={2} className="cardGrids">
                 <Card
                   sx={{
                     height: "100%",
-                    width: "50%",
+                    width: "100%",
                     display: "flex",
                     flexDirection: "column",
+                    borderStyle: "solid",
                   }}
                 >
                   <CardMedia
