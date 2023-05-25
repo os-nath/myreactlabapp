@@ -14,10 +14,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
-import { Hearts } from "react-loader-spinner";
+import { Hearts, Dna } from "react-loader-spinner";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const cards = [1, 2, 3, 4, 5, 6];
+const cards = [1, 2, 3];
 
 const theme = createTheme();
 
@@ -25,7 +25,7 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative" color="inherit">
+      <AppBar className="appBar" position="relative">
         {" "}
         <Toolbar
           sx={{
@@ -51,13 +51,11 @@ export default function Album() {
           <Container maxWidth="50%">
             <Typography component="h1" variant="h2" align="center" gutterBottom>
               <code>
-                Edita a <span className="editable">vida</span>, atualiza e segue
-                o baile!
+                Escolhe a <span className="editable">vida</span> e segue o baile
               </code>
             </Typography>
             <Typography variant="h5" align="center" color="#009739" paragraph>
-              Dinos and Horses will always be around - connected to the earth
-              and skies. Have you noticed this?
+              Dinos and Horses are always around - have you noticed this?
               <br />
             </Typography>
 
@@ -100,7 +98,7 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Hearts
+              {/* <Hearts
                 height="80"
                 width="200"
                 color="#a461fb"
@@ -110,6 +108,16 @@ export default function Album() {
                 visible={true}
                 alingText="center"
                 sx={{ p: 100 }}
+              /> */}
+
+              <Dna
+                visible={true}
+                height="120"
+                width="120"
+                ariaLabel="dna-loading"
+                wrapperStyle={{}}
+                wrapperClass="dna-wrapper"
+                colors={["#51E5FF", "#7DE2D1", "#FF7E6B"]}
               />
             </Stack>
           </Container>
@@ -122,20 +130,25 @@ export default function Album() {
         >
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} lg={4} className="cardGrids">
                 <Card
                   sx={{
                     height: "100%",
+                    width: "50%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
                   <CardMedia
                     component="img"
-                    sx={{
-                      // 16:9
-                      pt: "30 %",
-                    }}
+                    height="100%"
+                    width="50%"
+                    sx={
+                      {
+                        // 16:9
+                        // pt: "10 %",
+                      }
+                    }
                     image="Fada-AI_gen.jpg"
                     alt="random"
                   />

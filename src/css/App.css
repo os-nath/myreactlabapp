@@ -3,6 +3,18 @@
   background-color: #a070df;
 }
 
+.appBar {
+  background-color: #f1eff2 !important;
+}
+
+.cardGrids {
+  padding-right: 0 !important;
+  margin: 0 !important;
+  width: 20% !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

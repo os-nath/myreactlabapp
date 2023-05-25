@@ -1,9 +1,8 @@
 import React, { useEffect, useCallback, useState } from "react";
 
-
-import SubHeader from "./components/Hearts";
 import Sidebar from "./components/sidebar";
 import Content from "../src/components/content";
+import Footer from "./components/footer";
 
 import MuiDrawer from "@mui/material/Drawer";
 import { styled } from "@mui/material/styles";
@@ -59,7 +58,7 @@ function App() {
         </Drawer>
         <Box>
           <Content />
-          {/* <SubHeader /> */}
+          <Footer />
         </Box>
       </Box>
     </div>
