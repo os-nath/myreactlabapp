@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+
 
 import SubHeader from "./components/Hearts";
 import Sidebar from "./components/sidebar";
@@ -59,7 +59,7 @@ function App() {
         </Drawer>
         <Box>
           <Content />
-          <SubHeader />
+          {/* <SubHeader /> */}
         </Box>
       </Box>
     </div>

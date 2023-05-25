@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #a070df;
 }
 
 .App-logo {
@@ -27,16 +27,12 @@
 }
 
 .appCenter {
-  /* background-color: #282c34; */
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(64, 173, 216);
   text-align: center;
-  background-color: #282c34;
 }
 
 .App-link {

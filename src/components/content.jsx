@@ -14,6 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
+import { Hearts } from "react-loader-spinner";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const cards = [1, 2, 3, 4, 5, 6];
@@ -24,7 +25,8 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative">
+      <AppBar position="relative" color="inherit">
+        {" "}
         <Toolbar
           sx={{
             borderStyle: "solid",
@@ -60,15 +62,17 @@ export default function Album() {
             </Typography>
 
             <Typography variant="h5" align="center" color="#009739" paragraph>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{ p: 100 }}
-              >
-                Ongoing learning
-              </a>{" "}
+              <Box className="appCenter">
+                <a
+                  className="App-link"
+                  href="https://reactjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ p: 100 }}
+                >
+                  Ongoing learning
+                </a>{" "}
+              </Box>
             </Typography>
 
             <Stack
@@ -89,6 +93,24 @@ export default function Album() {
               >
                 Secondary action
               </Button>
+            </Stack>
+            <Stack
+              sx={{ pt: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="center"
+            >
+              <Hearts
+                height="80"
+                width="200"
+                color="#a461fb"
+                ariaLabel="hearts-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+                alingText="center"
+                sx={{ p: 100 }}
+              />
             </Stack>
           </Container>
         </Box>
@@ -114,10 +136,10 @@ export default function Album() {
                       // 16:9
                       pt: "30 %",
                     }}
-                    image="https://source.unsplash.com/random"
+                    image="Fada-AI_gen.jpg"
                     alt="random"
                   />
-                  <CardContent sx={{ flexGrow: 1, bgcolor: "orange" }}>
+                  <CardContent sx={{ flexGrow: 1, bgcolor: "#a070df" }}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
