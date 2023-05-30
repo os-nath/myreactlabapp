@@ -54,7 +54,10 @@ function App() {
     <div className="App">
       <Box style={{ display: "flex", flexFlow: "row nowrap" }}>
         <Drawer variant="permanent" open={!isCollapsed}>
-          <Sidebar onCollapsedToggle={onCollapsedToggle} />
+          <Sidebar
+            onCollapsedToggle={onCollapsedToggle}
+            isCollapsed={isCollapsed}
+          />
         </Drawer>
         <Box>
           <Content />

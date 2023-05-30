@@ -51,10 +51,10 @@ export default function Album() {
           <Container maxWidth="50%">
             <Typography component="h1" variant="h2" align="center" gutterBottom>
               <code>
-                Escolhe a <span className="editable">vida</span> e segue o baile
+                Escolha as <span className="editable">suas danças</span>
               </code>
             </Typography>
-            <Typography variant="h5" align="center" color="#009739" paragraph>
+            <Typography className="homePageSubheader" variant="h5" paragraph>
               Dinos and Horses are always around - have you noticed this?
               <br />
             </Typography>

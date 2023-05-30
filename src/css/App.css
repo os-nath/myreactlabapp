@@ -27,26 +27,32 @@
   pointer-events: none;
 }
 
+.homePageSubheader {
+  text-align: center;
+  /* color: #009739; */
+}
+
 .myPrimaryBtn {
   color: #000 !important;
-  background-color: #fedd00 !important;
+  background-color: #eb8939d2 !important;
   font-weight: 500 !important;
+  border-radius: 10px !important;
 }
 
 .myPrimaryBtn:hover {
-  background-color: #d97626 !important;
-  font-weight: 600 !important;
+  background-color: #fedd00 !important;
 }
 
 .mySecondaryBtn {
   color: #000 !important;
-  border-color: #d97626 !important;
+  border-color: #eb8939 !important;
   font-weight: 500 !important;
+  border-radius: 10px !important;
 }
 
 .mySecondaryBtn:hover {
-  background-color: #d97626 !important;
-  font-weight: 600 !important;
+  background-color: #fedd00 !important;
+  border: none !important;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
@@ -77,8 +83,9 @@
 }
 
 .App-link {
-  color: #8429a8;
+  color: #000;
   text-underline-offset: 14px !important;
+  text-decoration-color: #009739 !important;
 }
 
 /* @keyframes App-logo-spin {

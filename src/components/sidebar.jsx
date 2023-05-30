@@ -14,6 +14,7 @@ import {
 
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import StarBorderPurple500RoundedIcon from "@mui/icons-material/StarBorderPurple500Rounded";
 import { mainListItems, secondaryListItems } from "./listItems.js";
 
 import "../../src/css/sidebar.css";
@@ -28,9 +29,9 @@ function getWindowDimensions() {
   };
 }
 
-export default function Sidebar({ onCollapsedToggle, CollapseState }) {
-  // const { onCollapsedToggle, isCollapsed } = props;
+export default function Sidebar({ onCollapsedToggle, isCollapsed }) {
   const width_of_bar = getWindowDimensions();
+  console.log("CollapseState", isCollapsed);
 
   useEffect(() => {
     if (width_of_bar.width <= 450) {
@@ -40,25 +41,17 @@ export default function Sidebar({ onCollapsedToggle, CollapseState }) {
 
   return (
     <>
-      <Drawer className="drawerStyle" variant="permanent" open={!CollapseState}>
-        <Toolbar
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "flex-end",
-            px: [1],
-          }}
-        >
+      <Drawer className="drawerStyle" variant="permanent" open={!isCollapsed}>
+        <Toolbar className="toolBarStyle">
           <Grid item xs sx={{ textAlign: "right" }}>
-            <IconButton onClick={onCollapsedToggle}>
-              {CollapseState ? (
-                <ChevronRightIcon
-                  sx={{ m: 1, color: "blue", fontWeight: 900 }}
-                />
+            <IconButton
+              onClick={onCollapsedToggle}
+              sx={{ justifyContent: "flex-end", ml: 0 }}
+            >
+              {isCollapsed ? (
+                <ChevronRightIcon className="collapsedSidebarIcon" />
               ) : (
-                <ChevronLeftIcon
-                  sx={{ m: 1, color: "#FEDD00", fontWeight: 900 }}
-                />
+                <ChevronLeftIcon className="openSidebarIcon" />
               )}
             </IconButton>
           </Grid>
@@ -66,7 +59,7 @@ export default function Sidebar({ onCollapsedToggle, CollapseState }) {
 
         <List component="nav" sx={{ border: "none" }}>
           {mainListItems}
-          <Divider sx={{ my: 1, borderColor: "transparent" }} />
+          <Divider className="sidebarDivider" />
           {secondaryListItems}
         </List>
       </Drawer>

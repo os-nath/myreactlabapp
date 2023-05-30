@@ -1,94 +1,35 @@
-/* .sidebarMenuText {
-    font-size: 1.5vh;
-    font-weight: 800 !important;
-    color: #ffffff !important;
-    background-color: transparent;
-    margin-top: 0.5vh;
-    margin-bottom: 1vh !important;
-    margin-left: 0 !important;
-    margin-right: 4vh !important;
+.openSidebarIcon {
+  color: #fedd00;
+  font-weight: 900;
+  padding-left: 0 !important;
 }
 
-.sidebarMenuText:hover {
-    color: #002dff !important;
-    font-weight: 900 !important;
-    background-color: transparent;
+.collapsedSidebarIcon {
+  color: #fedd00;
+  font-weight: 900;
+  padding-left: 0 !important;
 }
 
-.sidebarMenuIcon {
-    font-size: 1.5vh;
-    font-weight: 800 !important;
-    color: #002dff !important;
-    background-color: transparent;
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-    margin-bottom: 1vh !important;
-    min-width: 44px !important;
-}
-
-.sidebarMenuIcon:hover {
-    color: #c60000 !important;
-}
-
-.hambuergerMenuIconOpen {
-    margin-right: 2vh !important;
-    color: #c60000;
-    font-size: 2.5vh !important;
-    font-weight: 900;
-}
-
-.hambuergerMenuIconOpen:hover {
-    color: #ffffff;
-}
-
-.hambuergerMenuIconCollapsed {
-    margin-right: 2vh !important;
-    margin-left: 2vh !important;
-    color: #c60000;
-    font-size: 2.5vh !important;
-    font-weight: 900;
-}
-.hambuergerMenuIconCollapsed:hover {
-    color: #ffffff;
-}
-
-.ourLogo {
-    margin: 1vh;
-}
-
-.MuiTypography-root {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 1.2em !important;
-}
-
-.MuiDrawer-paper {
-    background-color: #141414 !important;
-    border-radius: 3px !important;
-  
+.toolBarStyle {
+  padding-left: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .drawerStyle {
-    box-sizing: border-box !important;
-    width: drawerWidth !important;
-    border-right: #283b77 solid 2px right !important;
+  margin-right: 14px !important;
 }
 
-.sidebarMainContainer {
-    display: flex !important;
-    flex-direction: column !important;
-    row-gap: 40px !important;
-    align-items: center !important;
-    margin-bottom: 8vh !important;
+.sidebarDivider {
+  margin: 10px;
+  border-color: transparent !important;
 }
 
-.sidebarLogo {
-    margin-top: 6.5vh;
-    font-size: 4vh !important;
+.subheaderTitle {
+  color: #000 !important;
+  background-color: #ddcaf0 !important;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 20px;
 }
-
-.sidebarLogoCollapsed {
-    padding: 0.3vh !important;
-    margin-left: 1vh !important;
-    margin-top: 9.5vh !important;
-    font-size: 1vh !important;
-} */

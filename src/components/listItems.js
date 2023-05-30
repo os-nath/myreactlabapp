@@ -68,7 +68,7 @@ export const mainListItems = (
 
 export const secondaryListItems = (
   <React.Fragment>
-    <ListSubheader component="div" inset>
+    <ListSubheader className="subheaderTitle" component="div" inset>
       Our values
     </ListSubheader>
 
