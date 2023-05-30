@@ -1,25 +1,15 @@
 .App {
-  text-align: center;
-  background-color: #a070df;
+  text-align: center;        
+  background-color: #a070d1;
 }
 
 .appBar {
   background-color: #f1eff2 !important;
 }
 
-.cardGrids {
-  padding-right: 0 !important;
-  margin: 0 !important;
-  width: 20% !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border: 0 !important;
-}
-
-.homePageCtnr {
-  height: 100%;
+.gridCtnrAlignCardtoCenter {
   width: 100%;
-  background-color: yellow;
+  justify-content: space-around;
 }
 
 .App-logo {

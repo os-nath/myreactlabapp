@@ -111,33 +111,26 @@ export default function Album() {
                 ariaLabel="dna-loading"
                 wrapperStyle={{}}
                 wrapperClass="dna-wrapper"
-                colors={["#51E5FF", "#7DE2D1", "#FF7E6B"]}
               />
             </Stack>
           </Container>
         </Box>
 
         <Container
-          sx={{ py: 8, bgcolor: "blue" }}
+          sx={{ py: 8 }}
           maxWidth="100%"
           height="100%"
+          justifyContent="center"
         >
-          <Grid
-            container
-            spacing={1}
-            sx={{
-              width: "50%",
-            }}
-          >
+          <Grid className="gridCtnrAlignCardtoCenter" container spacing={1}>
             {cards.map((card) => (
-              <Grid item key={card} lg={2} className="cardGrids">
+              <Grid item key={card} xs={1} sm={2} md={2} lg={3}>
                 <Card
                   sx={{
                     height: "100%",
                     width: "100%",
                     display: "flex",
                     flexDirection: "column",
-                    borderStyle: "solid",
                   }}
                 >
                   <CardMedia
@@ -150,7 +143,7 @@ export default function Album() {
                         // pt: "10 %",
                       }
                     }
-                    image="Fada-AI_gen.jpg"
+                    image="AlterCity.jpg"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1, bgcolor: "#a070df" }}>
