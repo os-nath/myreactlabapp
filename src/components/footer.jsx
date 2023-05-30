@@ -72,7 +72,7 @@ export default function Footer({ isCollapsed, sidersize }) {
 
         <Box className="footerItemsNonClickable">
           <span>
-            {"MinhaReactApp"} &copy; {new Date().getFullYear()} {"made in AUS"}
+            {"ReactLab"} &copy; {new Date().getFullYear()} {"AUS"}
           </span>
         </Box>
       </Grid>

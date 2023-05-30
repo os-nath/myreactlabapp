@@ -10,9 +10,9 @@
   bottom: 0;
   left: auto;
   right: 0;
-  /* background-color: blueviolet; */
   background-color: #f1eff2;
-  /* padding: 2px; */
+  padding: 5px;
+  padding-top: 25px;
 }
 
 .footerItems {

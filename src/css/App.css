@@ -1,5 +1,5 @@
 .App {
-  text-align: center;        
+  text-align: center;
   background-color: #a070d1;
 }
 
@@ -7,9 +7,19 @@
   background-color: #f1eff2 !important;
 }
 
+.mainCardsCtn {
+  padding: 16px;
+  background-color: #f1eff2;
+}
+
 .gridCtnrAlignCardtoCenter {
   width: 100%;
   justify-content: space-around;
+}
+
+.cardContentBottom {
+  flex-grow: 1;
+  background-color: #f1eff2;
 }
 
 .App-logo {

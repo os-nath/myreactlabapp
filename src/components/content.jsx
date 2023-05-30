@@ -117,7 +117,7 @@ export default function Album() {
         </Box>
 
         <Container
-          sx={{ py: 8 }}
+          className="mainCardsCtn"
           maxWidth="100%"
           height="100%"
           justifyContent="center"
@@ -146,7 +146,7 @@ export default function Album() {
                     image="AlterCity.jpg"
                     alt="random"
                   />
-                  <CardContent sx={{ flexGrow: 1, bgcolor: "#a070df" }}>
+                  <CardContent className="cardContentBottom">
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
